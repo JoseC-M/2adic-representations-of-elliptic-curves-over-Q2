@@ -5,6 +5,9 @@
 // Since A^2 = a2*A - 2*I, the two traces determine Tr(g*A^n) for every
 // integer n, using the same recurrence backwards as well as forwards.
 
+Q := Rationals();
+I2 := IdentityMatrix(Q,2);
+
 // e=1 and e=2. Scalar inertia allows a rational companion basis for A.
 for a2 in [-2..2] do
     A := Matrix(Q,2,2,[0,-2,1,a2]);
